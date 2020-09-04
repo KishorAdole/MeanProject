@@ -4,7 +4,7 @@
 
         <!-- Left Block -->
         <div class="col bg-warning d-flex flex-column justify-content-center align-items-center"
-            [formGroup]="fbFormGroup">
+            [formGroup]="myFormGroup">
             <div class="h2 text-light"> Login Here </div>
 
             <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
@@ -20,7 +20,7 @@
                 <input type="password" placeholder="Enter Password" class="form-control" formControlName="Password" />
             </div>
 
-            <button class="btn btn-sm btn-info mt-1" [disabled]="!fbFormGroup.valid" (click)="loginProcessHere()">
+            <button class="btn btn-sm btn-info mt-1" [disabled]="!myFormGroup.valid" (click)="loginProcessHere()">
                 Login Here
             </button>
 
